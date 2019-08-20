@@ -23,11 +23,11 @@ public interface AddInfoMapper {
 
     int updateByPrimaryKey(AddInfo record);
 
-    List<AddInfo> getAllByUserId(String userId);
+    List<AddInfo> getAllByUserId(String userName);
 
     int updateAddTimeState(AddTimeDTO addTimeDTO);
 
     int deleteOneWeekAgo(@Param("startDate") String startDate, @Param("endDate") String endDate);
 
-    AddBasicInfoVO getSelfAddInfo(String userId);
+    AddBasicInfoVO getSelfAddInfo(String userName);
 }

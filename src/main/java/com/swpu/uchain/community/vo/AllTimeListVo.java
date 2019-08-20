@@ -45,4 +45,6 @@ public class AllTimeListVo {
      * 连续不合格次数
      */
     private Integer unQualifyTimes;
+
+
 }

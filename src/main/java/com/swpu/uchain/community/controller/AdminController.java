@@ -14,10 +14,7 @@ import com.swpu.uchain.community.vo.ResultVO;
 import com.swpu.uchain.community.vo.SomeOneTimeVo;
 import org.apache.poi.hssf.usermodel.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -28,6 +25,7 @@ import java.util.List;
  * @author；lzh
  * @Date:2019/8/820:12 Descirption:
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/admin")
 public class AdminController {

@@ -9,8 +9,8 @@ import lombok.Data;
 @Data
 public class AddInfoDTO {
 
-    /** 申请人学号*/
-    private String userId;
+    /** 申请人姓名*/
+    private String userName;
 
     /** 申请时间*/
     private String addTime;

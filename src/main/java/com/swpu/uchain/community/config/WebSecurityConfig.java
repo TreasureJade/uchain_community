@@ -91,7 +91,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/user/**").permitAll()
                 .antMatchers("/admin/**").permitAll()
                 .anyRequest().authenticated();
-
         //配置自己的验证过滤器
         httpSecurity
                 .addFilterBefore(authenticationTokenFilterBean(), UsernamePasswordAuthenticationFilter.class);

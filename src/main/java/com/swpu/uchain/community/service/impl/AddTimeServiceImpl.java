@@ -57,8 +57,8 @@ public class AddTimeServiceImpl implements AddTimeService {
     }
 
     @Override
-    public ResultVO getAddList(String userId) {
-        AddBasicInfoVO addBasicInfoVO = addInfoMapper.getSelfAddInfo(userId);
+    public ResultVO getAddList(String userName) {
+        AddBasicInfoVO addBasicInfoVO = addInfoMapper.getSelfAddInfo(userName);
         if(addBasicInfoVO == null){
             return ResultVOUtil.success();
         }
