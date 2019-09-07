@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class AddInfo implements Serializable {
     private Integer addId;
 
-    private String userId;
+    private String userName;
 
     private String addTime;
 

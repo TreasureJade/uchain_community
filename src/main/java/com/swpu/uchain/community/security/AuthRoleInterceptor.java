@@ -40,6 +40,7 @@ public class AuthRoleInterceptor extends HandlerInterceptorAdapter {
         log.info("============执行权限验证============");
         if (handler instanceof HandlerMethod) {
             HandlerMethod handlerMethod = (HandlerMethod) handler;
+            //获取方法上的注解
             RoleContro roleContro = handlerMethod.getMethodAnnotation(RoleContro.class);
             if (roleContro == null) {
                 return true;
@@ -47,6 +48,7 @@ public class AuthRoleInterceptor extends HandlerInterceptorAdapter {
             Integer roleValue = roleContro.role().getValue();
             Integer userValue = user.getRole();
             log.info("RoleValue:{},userRole:{}", roleValue, userValue);
+            //判断权限
             if (userValue >= roleValue) {
                 return true;
             } else {
